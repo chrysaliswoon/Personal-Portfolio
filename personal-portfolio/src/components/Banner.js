@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/images/header-img.svg";
-// import { ArrowRightCircle } from 'react-bootstrap-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons'
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -59,7 +60,7 @@ export const Banner = () => {
                                     <h1>{`Hi! I'm Chrysalis - `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Full-Stack", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                                     <p>A Full-stack Developer with more than 7 years experience in Marketing, Business Development and Education. Chrysalis is a great team player, and excellent communicator who is able to work with various stakeholders in the company with enthusiasm and drive to create impactful web products for the company.
                                     </p>
-                                    <button onClick={() => console.log('connect')}>Let’s Connect </button>
+                                    <button onClick={() => console.log('connect')}>Let’s Connect <FontAwesomeIcon icon={faCircleArrowRight} /></button>
                                 </div>}
                         </TrackVisibility>
                     </Col>
